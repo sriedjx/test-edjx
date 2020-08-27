@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "development"
+  cluster:
+    server: "https://devcontrol.edjx.network/k8s/clusters/c-6c6cm"
+
+users:
+- name: "development"
+  user:
+    token: "kubeconfig-u-bmcmx:szmglk55p8tf4hb48bbbrs25lxcxkd8kvjwx42ngrq8nhrr8rgnwz7"
+
+contexts:
+- name: "development"
+  context:
+    user: "development"
+    cluster: "development"
+
+current-context: "development"
